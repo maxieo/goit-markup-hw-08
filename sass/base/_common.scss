@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto',Tahoma,sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primarly-black-color);
+    background-color: var(--primarly-white-color);
+}
+.list  {
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+.section {
+    @media screen and (min-width:480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width:768px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}

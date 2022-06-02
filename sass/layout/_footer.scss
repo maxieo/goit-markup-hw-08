@@ -1,0 +1,103 @@
+.footer {
+    background-color: var(--hero-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container {
+        @media screen and (min-width:1200px) {
+            align-items: baseline;
+        }
+    }
+    &-logo {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        color:var(--accent-color);
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__list li:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    &__address {
+        margin: auto;
+        @media screen and (min-width:768px) {
+            
+        }
+        @media screen and (min-width:1200px) {
+            
+        }
+    }
+    &__map{
+        color: var(--primarly-white-color)
+    }
+    &__contacts,
+    &__address {
+    font-family:inherit;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--primarly-gray-color);
+    }
+    &__contacts {
+        color: var(--footer-contacts);
+            &:hover,
+            &:focus,
+            .current {
+                color:var(--accent-color);
+            }
+    }
+    &__address {
+        color: var(--primarly-white-color);
+        margin-bottom: 60px;
+        @media screen and (min-width:768px) {
+            margin-bottom: 0;
+        }
+    }
+    &__item{
+        text-align: center;
+        @media screen and (min-width:1200px) {
+            display: flex;
+            align-items: baseline;
+            margin-top: 9px;
+            text-align: start;
+        }
+    }
+    &-logo-item {
+        padding-bottom: 20px;
+    }
+    &-logo-span {
+        color: var(--primarly-white-color);
+    }
+    &-mail{
+        margin-bottom: 9px;
+    }
+}
+
+.footer-wrapper {
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    @media screen and (min-width:1200px) {
+        justify-content: space-between;
+    }
+}
+.address-content {
+    @media screen and (min-width:768px) {
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
