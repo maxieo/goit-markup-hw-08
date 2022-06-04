@@ -50,7 +50,7 @@
                 </svg>
             </button>
                 <ul class="list mob-header__list list">
-                    <li class="item mob-header__item"><a href="#" class="mob-header__link link">Студия</a></li>
+                    <li class="item mob-header__item"><a href="#" class="mob-header__link link current-mob">Студия</a></li>
                     <li class="item mob-header__item"><a href="./portfolio.html" class="mob-header__link link">Портфолио</a></li>
                     <li class="item mob-header__item"><a href="#" class="mob-header__link link">Контакты</a></li>
                 </ul>
@@ -82,7 +82,7 @@
     </header>
     
     <main>
-        <section class="section hero">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero__btn btn" data-modal-open>Заказать услугу</button>
@@ -133,25 +133,25 @@
             </div>    
         </section>
     
-        <section class="section about">
+        <section class="about">
             <div class="container">
                 <h2 class="about__title">Чем мы занимаемся</h2>
                 <ul class="about__list list">
                     <li class="about__item">
                         <div class="about__overlay">
-                            <img srcset="./images/about-1.jpg 1x, ./images/about-1-2x.jpg 2x" src="./images/about-1.jpg" alt="Рабочий процесс" width="370">
+                            <img src="./images/about/desktop/about-1.jpg" alt="Рабочий процесс" width="370">
                             <p class="about__text">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="about__item">
                         <div class="about__overlay">
-                            <img srcset="./images/about-2.jpg 1x, ./images/about-2-2x.jpg 2x" src="./images/about-2.jpg" alt="поиск" width="370">
+                            <img src="./images/about/desktop/about-2.jpg" alt="поиск" width="370">
                             <p class="about__text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="about__item">
                         <div class="about__overlay">
-                            <img srcset="./images/about-3.jpg 1x, ./images/about-3-2x.jpg 2x" src="./images/about-3.jpg" alt="палитра-цветов" width="370">
+                            <img src="./images/about/desktop/about-3.jpg" alt="палитра-цветов" width="370">
                             <p class="about__text">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -163,7 +163,18 @@
                 <h2 class="team__title">Наша Команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
-                        <img srcset="./images/team-1.jpg 1x, ./images/team-1-2x.jpg 2x" src="./images/team-1.jpg" alt="Продакт дизайнер" width="270">
+                        <picture>
+                            <source srcset="./images/team/desktop/team-1.jpg 1x, ./images/team/desktop/team-1-2x.jpg 2x"
+                                    media="(min-width:1200px)"
+                                    type="image/jpeg"/>
+                            <source srcset="./images/team/tablet/team-1-tab.jpg 1x, ./images/team/tablet/team-1-tab-2x.jpg 2x"
+                                    media="(min-width:768px)"
+                                    type="image/jpeg"/>
+                            <source srcset="./images/team/mob/team-1-mob.jpg 1x, ./images/team/mob/team-1-mob-2x.jpg 2x"
+                                    media="(min-width:767px)"
+                                    type="image/jpeg"/>        
+                            <img src="./images/team/desktop/team-1.jpg" alt="Product Designer">
+                        </picture>
                             <div class="team-text">
                                 <h3 class="team-text__name">Игорь Демьяненко</h3>
                                 <p class="team-text__role">Product Designer</p>
@@ -200,7 +211,18 @@
                             </div>
                     </li>
                     <li class="team-list__item">
-                        <img srcset="./images/team-2.jpg 1x, ./images/team-2-2x.jpg 2x" src="./images/team-2.jpg" alt="Фронтенд разработчик" width="270">
+                        <picture>
+                            <source srcset="./images/team/desktop/team-2.jpg 1x, ./images/team/desktop/team-2-2x.jpg 2x"
+                                    media="(min-width:1200px)"
+                                    type="image/jpeg"/>
+                            <source srcset="./images/team/tablet/team-2-tab.jpg 1x, ./images/team/tablet/team-2-tab-2x.jpg 2x"
+                                    media="(min-width:768px)"
+                                    type="image/jpeg"/>
+                            <source srcset="./images/team/mob/team-2-mob.jpg 1x, ./images/team/mob/team-2-mob-2x.jpg 2x"
+                                    media="(min-width:767px)"
+                                    type="image/jpeg"/>        
+                            <img src="./images/team/desktop/team-2.jpg" alt="Product Designer">
+                        </picture>
                             <div class="team-text">
                                 <h3 class="team-text__name">Ольга Репина</h3>
                                 <p class="team-text__role">Frontend Developer</p>
@@ -237,7 +259,17 @@
                             </div>
                     </li>
                     <li class="team-list__item">
-                        <img srcset="./images/team-3.jpg 1x, ./images/team-3-2x.jpg 2x" src="./images/team-3.jpg" alt="Маркетинг" width="270">
+                        <picture>
+                            <source srcset="./images/team/desktop/team-3.jpg 1x, ./images/team/desktop/team-3-2x.jpg 2x"
+                                    media="(min-width:1200px)"
+                                    type="image/jpeg"/>
+                            <source srcset="./images/team/tablet/team-3-tab.jpg 1x, ./images/team/tablet/team-3-tab-2x.jpg 2x"
+                                    media="(min-width:768px)"
+                                    type="image/jpeg"/>
+                            <source srcset="./images/team/mob/team-3-mob.jpg 1x, ./images/team/mob/team-3-mob-2x.jpg 2x"
+                                    media="(min-width:767px)"
+                                    type="image/jpeg"/>        
+                            <img src="./images/team/desktop/team-3.jpg" alt="Product Designer">
                             <div class="team-text">
                                 <h3 class="team-text__name">Николай Тарасов</h3>
                                 <p class="team-text__role">Marketing</p>
@@ -274,7 +306,18 @@
                             </div>
                     </li>
                     <li class="team-list__item">
-                        <img srcset="./images/team-4.jpg 1x, ./images/team-4-2x.jpg 2x" src="./images/team-4.jpg" alt="ЮИ Дизайнер" width="270">
+                        <picture>
+                            <source srcset="./images/team/desktop/team-4.jpg 1x, ./images/team/desktop/team-4-2x.jpg 2x"
+                                    media="(min-width:1200px)"
+                                    type="image/jpeg"/>
+                            <source srcset="./images/team/tablet/team-4-tab.jpg 1x, ./images/team/tablet/team-4-tab-2x.jpg 2x"
+                                    media="(min-width:768px)"
+                                    type="image/jpeg"/>
+                            <source srcset="./images/team/mob/team-4-mob.jpg 1x, ./images/team/mob/team-4-mob-2x.jpg 2x"
+                                    media="(min-width:480px)"
+                                    type="image/jpeg"/>        
+                            <img src="./images/team/desktop/team-4.jpg" alt="Product Designer">
+                        </picture>
                             <div class="team-text">
                                 <h3 class="team-text__name">Михаил Ермаков</h3>
                                 <p class="team-text__role">UI Designer</p>

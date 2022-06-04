@@ -1,18 +1,14 @@
 .description {
-    @media screen and (min-width:480px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    display: flex;
+    flex-wrap: wrap;
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
     }
     &__item {
         width: 100%;
-        @media screen and (min-width:480px) {
-            width: calc((100% - 30px) / 1);
-            margin-bottom: 30px;
-        }
+        width: calc((100% - 30px) / 1);
+        margin-bottom: 30px;
         @media screen and (min-width:768px) {
             width: calc((100% - 60px) / 2);
             margin-bottom: 30px;
@@ -45,6 +41,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
+        width: 290px;
         @media screen and (min-width:480px) {
             width: 450px;
         }

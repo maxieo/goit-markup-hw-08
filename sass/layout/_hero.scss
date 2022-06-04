@@ -4,16 +4,27 @@
     background-image:linear-gradient(
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)), 
-    url(../images/hero-bg-mob.jpg);
+    url(../images/hero/mob/hero-bg-mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1600px;
     margin: 0 auto;
+    padding: 118px 0;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            background-image:linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../images/hero/mob/hero-bg-mob-2x.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     @media screen and (min-width:768px) {
         background-image:linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), 
-        url(../images/hero-bg-mob.jpg);
+        url(../images/hero/tablet/hero-bg-tab.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         @media (min-device-pixel-ratio: 2),
@@ -22,7 +33,7 @@
             background-image:linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), 
-            url(../images/hero-bg-mob-2x.jpg);
+            url(../images/hero/tablet/hero-bg-tab-2x.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -31,16 +42,17 @@
         background-image:linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), 
-        url(../images/hero-bg.jpg);
+        url(../images/hero/desktop/hero-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        padding: 200px 0;
         @media (min-device-pixel-ratio: 2),
          (min-resolution:192dpi),
          (min-resolution:2dppx){
             background-image:linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), 
-            url(../images/hero-bg-2x.jpg);
+            url(../images/hero/desktop/hero-bg-2x.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -55,11 +67,9 @@
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 30px;
-            @media screen and (min-width:480px) {
-                max-width: 360px;
-                font-size: 26px;
-                line-height: 1.62;
-            }
+            max-width: 360px;
+            font-size: 26px;
+            line-height: 1.62;
             @media screen and (min-width:1200px) {
                 max-width: 696px;
                 font-size: 44px;

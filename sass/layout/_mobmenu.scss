@@ -46,7 +46,9 @@
     letter-spacing: 0.02em;
     color: var(--primarly-black-color);
     margin-bottom: 32px;
-    &:hover, &:focus {
+    &:hover,
+    &:focus,
+    &.current-mob {
         color: var(--accent-color);
     }
 }
@@ -68,10 +70,13 @@
 }
 .mob-soc__link {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.22px;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    @media screen and (min-width:480px) {
+        font-size: 18px;
+    }
 }
 .mob-soc__list:not(:last-child)::after{
     content: "";

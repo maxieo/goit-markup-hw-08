@@ -1,4 +1,8 @@
 .clients-item{
+    @media screen and (min-width:320px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
     @media screen and (min-width:480px) {
         display: flex;
         flex-wrap: wrap;
@@ -22,6 +26,10 @@
                 border-color: var(--accent-color);
                 fill: var(--accent-color);
             }
+            @media screen and (min-width:320px){
+                width: 140px;
+                height: 92px;
+            }
             @media screen and (min-width:480px){
                 width: 210px;
                 height: 92px;
@@ -37,6 +45,8 @@
         }
         &__list{
             width: 100%;
+            width: calc((100% - 60px) / 2);
+            margin-bottom: 30px;
             @media screen and (min-width:480px) {
                 width: calc((100% - 60px) / 2);
                 margin-bottom: 30px;
